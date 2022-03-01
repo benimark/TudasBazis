@@ -1,0 +1,65 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+//colors
+$navbar:#2B3040;
+$black: #212529;
+//fonts
+$font-family-poppins: 'Poppins', sans-serif;
+//map for TudasBazis colors
+$tudas-bazis-colors: (
+  "navbar": $navbar
+);
+
+$theme-colors: (
+    "dark": $navbar,
+    "admin-primary": $black
+);
+.btn-light:hover{
+  background-color: rgb(221, 221, 221) !important;
+}
+.form-label{
+  font-weight: 500;
+}
+//HR
+hr{
+  height: 1px !important;
+}
+//DEF
+p{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.mr-1{
+  margin-right: 1rem;
+}
+.mr-2{
+  margin-right: 2rem;
+}
+.mr-3{
+  margin-right: 3rem;
+}
+.ml-3{
+  margin-left: 2rem;
+}
+//NAVBAR
+$navbar-toggler-focus-width: 0.1rem;
+$navbar-dark-color: white;
+$navbar-brand-font-size: 30px;
+//OFFCANVAS
+$offcanvas-bg-color: #314151;
+$offcanvas-color: #D2D9E0;
+$offcanvas-horizontal-width: 380px;
+$offcanvas-vertical-height:  1vh;
+//FONT
+$font-weight-bold: 600;
+$font-family-base:  $font-family-poppins;
+
+$theme-colors: map-merge($theme-colors, $tudas-bazis-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

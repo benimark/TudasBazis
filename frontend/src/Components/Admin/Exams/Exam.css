@@ -1,0 +1,89 @@
+.Exam{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ExamCard{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 200px;
+    flex-direction: column;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+}
+.ExamCard h1{
+    font-size: 60px;
+}
+td,th{
+    text-align: center !important;
+}
+.panelType{
+    padding: 0px 10px 0px 10px;
+    color: rgb(255, 255, 255);
+    background-color: #3d3d3d;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.panelType:hover{
+    background-color: #0f0f0f;
+}
+.uploadedImg{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+.message-note{
+    font-style: italic;
+}
+.tableBox{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+}
+.tableChooser{
+    width: 100px;
+    background-color: #bebebe;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.tableChooser input{
+    width: 30px;
+    height: 30px;
+}
+.tableInput{
+    border: none;
+    background-color: transparent; 
+    width: 100%;
+}
+.tableInput:focus{
+    outline: none;
+    border: none;
+}
+.tablazat th input{
+    font-weight: bold;
+}
+.newExam .bi{
+    color: #3d3d3d;
+    position: absolute;
+    right:-10px;
+    top:20px;
+    cursor: pointer;
+    transition: 0.3s all;
+    font-size: 20px;
+}
+.newExam .bi:hover{
+    color: rgb(255, 104, 104);
+    transform: rotate(180deg);
+}

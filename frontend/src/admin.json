@@ -1,0 +1,34 @@
+{
+    "menu_items":[
+        {
+            "title":"Összesítés",
+            "url":"osszesites",
+            "icon":"bi-speedometer2"  
+        },
+        {
+             "title":"Felhasználók",
+             "url":"felhasznalok",
+             "icon":"bi-people-fill"  
+        },
+        {
+            "title":"Érettségik",
+            "url":"erettsegik",
+            "icon":"bi-card-heading"   
+        },
+        {
+            "title":"Új Érettségi",
+            "url":"erettsegik/uj",
+            "hide":true  
+        },
+        {
+            "title":"Külső menü",
+            "url":"ext-menu",
+            "icon":"bi-list"  
+        },
+        {
+            "title":"Beállítások",
+            "url":"beallitasok",
+            "icon":"bi-gear-fill"  
+        }
+    ]
+}

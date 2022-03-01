@@ -1,0 +1,20 @@
+.widget{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    background-clip:padding-box;
+}
+.dashboard img{
+    margin-right: 10px; 
+}
+.time{
+    font-weight: 300;
+    color: rgb(233, 233, 233);
+    font-size: 25px;
+    margin: 0px 0px 0px 20px;
+}
+.wrapper{
+    margin: 10px 20px 0px 20px;
+}

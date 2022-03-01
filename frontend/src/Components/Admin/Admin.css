@@ -1,0 +1,82 @@
+.sidebar{
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    z-index: 10;
+}
+.sidebar h1,h2,h3,h5{
+    font-weight: 400;
+}
+.sidebar h4{
+    font-weight: 300;
+}
+.sidebar .logo{
+    padding: 30px 50px 0px 50px;
+}
+.sidebar ul{
+    list-style: none;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 0;
+}
+.sidebar li{
+    transition: 0.3s all;
+    padding: 10px 20px;
+}
+.sidebar .selected{
+    background-color: #15181b;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.sidebar li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sidebar .bi{
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.sidebar a {
+    color: inherit !important; 
+    text-decoration: inherit !important; 
+}
+.hr{
+    min-width: 200px;
+}
+.sidebar ul li p{
+    margin: 0;
+}
+.sidebar ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menuOpen .bi{
+    color: white;
+}
+.menuOpen{
+    position: fixed;
+    z-index: 10;
+    background-color: #15181b;
+    border-radius: 50%;
+    top:10px;
+    left:-45px;
+    height: 75px;
+    width: 75px;
+    display: none;
+    justify-content: end;
+    align-items: center;
+    transition: 0.4s all;
+}
+.menuOpen:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .menuOpen{
+      display: flex;
+    }
+  }
